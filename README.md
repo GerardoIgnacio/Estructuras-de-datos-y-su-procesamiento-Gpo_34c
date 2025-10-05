@@ -52,6 +52,28 @@ mejor_promedio = df.groupby('Materia')['Calificación'].mean().max()
 # Mostrar resultados
 print("\n📊 DATASET CREADO:")
 print(df.head(10))
+[2.1csv (1).txt](https://github.com/user-attachments/files/22704998/2.1csv.1.txt)
+Estudiante,Materia,Calificación,Comentario
+Ana,Matemáticas,98,Excelente trabajo
+Luis,Ciencias,88,Buen desempeño
+Maria,Historia,74,Puede mejorar
+Carlos,Español,67,Sobresaliente
+Elena,Programación,80,Muy responsable
+Ana,Matemáticas,98,Creativo
+Luis,Ciencias,78,Esfuerzo notable
+Maria,Historia,82,Participación activa
+Carlos,Español,70,Comprensión buena
+Elena,Programación,70,Trabajo en equipo
+Ana,Matemáticas,83,Análisis crítico
+Luis,Ciencias,95,Investigación completa
+Maria,Historia,99,Presentación clara
+Carlos,Español,83,Dominio del tema
+Elena,Programación,62,Atención en clase
+Ana,Matemáticas,81,Mejora continua
+Luis,Ciencias,61,Responsable
+Maria,Historia,83,Puntual en entregas
+Carlos,Español,89,Buen seguimiento
+Elena,Programación,97,Resultados destacados
 
 print(f"\n📈 ANÁLISIS ESTADÍSTICO:")
 print(f"Promedio general: {promedio_general:.1f}")
