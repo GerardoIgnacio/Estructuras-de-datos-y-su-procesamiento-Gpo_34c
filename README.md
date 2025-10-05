@@ -12,7 +12,59 @@ Programa en Python que utiliza NumPy y pandas para procesar datos de calificacio
 ## Resultados
 - Promedio general: [promedio_calculado]
 - Materia con mejor promedio: [materia_mejor_promedio]
-- Archivo generado: `Ev2.1.csv`
+- Archivo generado: `Ev2.1.csv`# EVIDENCIA ESCOLAR - Procesamiento de Datos con NumPy y pandas
+print("=== EVIDENCIA 2.1 - PROCESAMIENTO DE DATOS ===")
+
+import numpy as np
+import pandas as pd
+
+np.random.seed(42)
+
+# Arreglos NumPy para datos estudiantiles
+estudiantes = np.array(['Ana', 'Luis', 'Maria', 'Carlos', 'Elena'])
+materias = np.array(['Matemáticas', 'Ciencias', 'Historia', 'Español', 'Programación'])
+
+# Generar datos con NumPy
+calificaciones = np.random.randint(60, 101, 20)
+comentarios = np.array([
+    'Excelente trabajo', 'Buen desempeño', 'Puede mejorar', 'Sobresaliente',
+    'Muy responsable', 'Creativo', 'Esfuerzo notable', 'Participación activa',
+    'Comprensión buena', 'Trabajo en equipo', 'Análisis crítico', 'Investigación completa',
+    'Presentación clara', 'Dominio del tema', 'Atención en clase', 'Mejora continua',
+    'Responsable', 'Puntual en entregas', 'Buen seguimiento', 'Resultados destacados'
+])
+
+# Crear DataFrame
+datos = {
+    'Estudiante': np.tile(estudiantes, 4),
+    'Materia': np.tile(materias, 4),
+    'Calificación': calificaciones,
+    'Comentario': comentarios
+}
+
+df = pd.DataFrame(datos)
+
+# Análisis con NumPy
+promedio_general = np.mean(calificaciones)
+mejor_materia = df.groupby('Materia')['Calificación'].mean().idxmax()
+mejor_promedio = df.groupby('Materia')['Calificación'].mean().max()
+
+# Mostrar resultados
+print("\n📊 DATASET CREADO:")
+print(df.head(10))
+
+print(f"\n📈 ANÁLISIS ESTADÍSTICO:")
+print(f"Promedio general: {promedio_general:.1f}")
+print(f"Materia con mejor promedio: {mejor_materia} ({mejor_promedio:.1f})")
+print(f"Calificación máxima: {np.max(calificaciones)}")
+print(f"Calificación mínima: {np.min(calificaciones)}")
+print(f"Total de registros: {len(df)}")
+
+# Guardar archivo CSV
+archivo_csv = 'Ev2.1.csv'
+df.to_csv(archivo_csv, index=False, encoding='utf-8')
+print(f"\n✅ ARCHIVO GENERADO: '{archivo_csv}'")
+print("🎉 ¡EVIDENCIA 2.1 COMPLETADA!")
 
 ## Tecnologías
 - Python 3
