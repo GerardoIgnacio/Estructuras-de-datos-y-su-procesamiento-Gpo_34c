@@ -1,7 +1,31 @@
+[Ev2.1.csv](https://github.com/user-attachments/files/22705011/Ev2.1.csv)
 # Evidencia Escolar - Procesamiento de Datos con Python
 
 ## Descripción
 Programa en Python que utiliza NumPy y pandas para procesar datos de calificaciones estudiantiles.
+[Uploading Ev2.Estudiante,Materia,Calificación,Comentario
+Ana,Matemáticas,98,Excelente trabajo
+Luis,Ciencias,88,Buen desempeño
+Maria,Historia,74,Puede mejorar
+Carlos,Español,67,Sobresaliente
+Elena,Programación,80,Muy responsable
+Ana,Matemáticas,98,Creativo
+Luis,Ciencias,78,Esfuerzo notable
+Maria,Historia,82,Participación activa
+Carlos,Español,70,Comprensión buena
+Elena,Programación,70,Trabajo en equipo
+Ana,Matemáticas,83,Análisis crítico
+Luis,Ciencias,95,Investigación completa
+Maria,Historia,99,Presentación clara
+Carlos,Español,83,Dominio del tema
+Elena,Programación,62,Atención en clase
+Ana,Matemáticas,81,Mejora continua
+Luis,Ciencias,61,Responsable
+Maria,Historia,83,Puntual en entregas
+Carlos,Español,89,Buen seguimiento
+Elena,Programación,97,Resultados destacados
+1.csv…]()
+
 
 ## Características
 - Generación de datos con arreglos NumPy
@@ -12,7 +36,20 @@ Programa en Python que utiliza NumPy y pandas para procesar datos de calificacio
 ## Resultados
 - Promedio general: [promedio_calculado]
 - Materia con mejor promedio: [materia_mejor_promedio]
-- Archivo generado: `Ev2.1.csv`# EVIDENCIA ESCOLAR - Procesamiento de Datos con NumPy y pandas
+- Archivo generado: `Ev2.1.csv`
+
+## Tecnologías
+- Python 3
+- NumPy
+- pandas
+
+## Estructura del Dataset
+- Estudiante: Nombre del estudiante
+- Materia: Asignatura cursada
+- Calificación: Puntuación obtenida (60-100)
+- Comentario: Evaluación cualitativa del desempeño
+
+  # EVIDENCIA ESCOLAR - Procesamiento de Datos con NumPy y pandas
 print("=== EVIDENCIA 2.1 - PROCESAMIENTO DE DATOS ===")
 
 import numpy as np
@@ -52,28 +89,6 @@ mejor_promedio = df.groupby('Materia')['Calificación'].mean().max()
 # Mostrar resultados
 print("\n📊 DATASET CREADO:")
 print(df.head(10))
-[2.1csv (1).txt](https://github.com/user-attachments/files/22704998/2.1csv.1.txt)
-Estudiante,Materia,Calificación,Comentario
-Ana,Matemáticas,98,Excelente trabajo
-Luis,Ciencias,88,Buen desempeño
-Maria,Historia,74,Puede mejorar
-Carlos,Español,67,Sobresaliente
-Elena,Programación,80,Muy responsable
-Ana,Matemáticas,98,Creativo
-Luis,Ciencias,78,Esfuerzo notable
-Maria,Historia,82,Participación activa
-Carlos,Español,70,Comprensión buena
-Elena,Programación,70,Trabajo en equipo
-Ana,Matemáticas,83,Análisis crítico
-Luis,Ciencias,95,Investigación completa
-Maria,Historia,99,Presentación clara
-Carlos,Español,83,Dominio del tema
-Elena,Programación,62,Atención en clase
-Ana,Matemáticas,81,Mejora continua
-Luis,Ciencias,61,Responsable
-Maria,Historia,83,Puntual en entregas
-Carlos,Español,89,Buen seguimiento
-Elena,Programación,97,Resultados destacados
 
 print(f"\n📈 ANÁLISIS ESTADÍSTICO:")
 print(f"Promedio general: {promedio_general:.1f}")
@@ -87,14 +102,4 @@ archivo_csv = 'Ev2.1.csv'
 df.to_csv(archivo_csv, index=False, encoding='utf-8')
 print(f"\n✅ ARCHIVO GENERADO: '{archivo_csv}'")
 print("🎉 ¡EVIDENCIA 2.1 COMPLETADA!")
-
-## Tecnologías
-- Python 3
-- NumPy
-- pandas
-
-## Estructura del Dataset
-- Estudiante: Nombre del estudiante
-- Materia: Asignatura cursada
-- Calificación: Puntuación obtenida (60-100)
-- Comentario: Evaluación cualitativa del desempeño
+  
