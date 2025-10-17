@@ -1,1 +1,14 @@
+# Sistema de Reservaciones de Salas
 
+Sistema completo de gestión de reservaciones desarrollado en Python con SQLite.
+
+## Características
+- Gestión de usuarios y salas
+- Sistema de reservaciones con validaciones
+- Reportes y exportación a Excel
+- Interfaz de consola intuitiva
+
+## Instalación
+```bash
+pip install -r requirements.txt
+python sistema_reservaciones.pyC:\Users\gerar\Downloads\PIA\ev3estructuras.py
