@@ -1,9 +1,9 @@
 [PIAEYCDVENTAS.py](https://github.com/user-attachments/files/23381583/PIAEYCDVENTAS.py)
-# 💻 Proyecto: Sistema de Ventas en Python
+#  Proyecto: Sistema de Ventas en Python
 
 Este es un sistema simple de punto de venta (POS) creado en Python y SQLite. El programa está diseñado para ejecutarse en la terminal y permite gestionar clientes y registrar ventas de ropa, aplicando un descuento especial a nuevos clientes.
 
-## 🚀 Funcionalidades Principales
+##  Funcionalidades Principales
 
 * **Registro de Clientes:** Guarda nuevos clientes (nombre y email) en una base de datos SQLite.
 * **Registro de Ventas:** Permite al operador ingresar una descripción de la venta (ej. "Camisa") y un monto total.
@@ -11,7 +11,7 @@ Este es un sistema simple de punto de venta (POS) creado en Python y SQLite. El 
 * **Reportes en Terminal:** Muestra un historial de todas las ventas y una lista de los clientes registrados.
 * **Exportación a Excel:** Genera un archivo `.xlsx` (`Reporte_Ventas.xlsx`) con un desglose completo de todas las transacciones para un fácil análisis.
 
-## 🛠️ Tecnologías Usadas
+##  Tecnologías Usadas
 
 * **Python 3**
 * **SQLite3** (para la base de datos local)
